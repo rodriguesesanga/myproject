@@ -1,0 +1,10 @@
+HOST : azureuser@74.235.161.211
+PATH : config_files
+LOCAL DIR : src
+STORAGE ACCOUNT : healthy
+CONTAINER : mycontainer
+src/
+src/tab.conf
+src/tartemmpion.conf
+src/tata.conf
+src/toto.conf
