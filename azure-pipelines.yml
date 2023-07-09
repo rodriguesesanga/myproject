@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: mypool
+pool: mypool
 
 steps:
 - script: myscript.sh 74.235.161.211:config_files src healthy:mycontainer
