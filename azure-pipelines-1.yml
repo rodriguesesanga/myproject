@@ -13,5 +13,6 @@ steps:
   displayName: 'Run a multi-line script'
   
 - script: |
+    ls
     ..\..\..\azcopy_windows_amd64_10.19.0\azcopy.exe copy 'configure_files/confiles-2023-07-09_17-29-55+0200.tar.gz' "https://healthy.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-07-10T05:47:15Z&st=2023-07-09T21:47:15Z&spr=https&sig=NqLPGKmPoxeauczwBB2BOx6%2FdYFNTDHaobGCX9A6VNc%3D"
   displayName: 'Run a one-line script'
