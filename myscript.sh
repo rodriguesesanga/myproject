@@ -24,5 +24,5 @@ tar -zcvf configure_files/confiles-$name.tar.gz $local_dir/ >> script.log
 
 #Upload tarball in Storage AZURE
 # shellcheck disable=SC2016
-azcopy copy 'configure_files/confiles-$name.tar.gz' 'https://$storage[0].blob.core.windows.net/$storage[1]/confiles-$name.tar.gz' >> script.log
+.\azcopy_windows_amd64_10.19.0\azcopy.exe copy 'configure_files/confiles-$name.tar.gz' 'https://$storage[0].blob.core.windows.net/$storage[1]/confiles-$name.tar.gz' >> script.log
 
