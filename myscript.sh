@@ -21,9 +21,4 @@ scp $1/./*.conf $2 >> script.log
 #IF [[ -z confiles.tar]] then,
 name=$(date '+%Y-%m-%d_%H-%M-%S%z') >> script.log
 tar -zcvf configure_files/confiles-$name.tar.gz $local_dir/ >> script.log
-cd c:
-#Upload tarball in Storage AZURE
-# shellcheck disable=SC2016
-cd c:
-azcopy_windows_amd64_10.19.0\azcopy.exe copy 'configure_files/confiles-$name.tar.gz' 'https://$storage[0].blob.core.windows.net/$storage[1]/confiles-$name.tar.gz' >> script.log
 
