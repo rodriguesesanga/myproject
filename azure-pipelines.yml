@@ -11,8 +11,4 @@ pool: mypool
 
 steps:
 - script: .\myscript.sh 74.235.161.211:config_files src healthy:mycontainer && type script.log
-- task: SSH@0
-  inputs:
-    runOptions: 'script'
-    readyTimeout: '20000'
   displayName: 'Run a one-line script'
