@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$4" == "dry-run" ]; then
+if [ "${4:-dry-run" == "dry-run" ]; then
   echo "**** This dry-run mode ****" > script.log
   echo "1. GET INPUT:ARGUMENTS" >> script.log
   echo "2. GET .conf files from remote machine to local" >> script.log 
