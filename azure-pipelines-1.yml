@@ -11,8 +11,3 @@ pool: mypool
 steps:
 - script: .\myscript.sh 74.235.161.211:config_files src healthy:mycontainer
   displayName: 'Run a multi-line script'
-  
-- script: |
-    dir configure_files
-    ..\..\..\..\..\..\azcopy_windows_amd64_10.19.0\azcopy.exe copy "configure_files\*" "https://healthy.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-07-10T17:52:57Z&st=2023-07-10T09:52:57Z&spr=https&sig=RcCdQlKbjAqvqR1EFIoi7IsiOhjFbUVdAWcxThk7Wls%3D"
-  displayName: 'Run a one-line script'
