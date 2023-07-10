@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-
-if [[ "$4" == "dry-run" ]; then
-  echo "1. GET INPUT:ARGUMENTS"
-  echo "2. GET .conf files from remote machine to local"
-  echo "3. CREATE a tarball .tar.gz with .conf files retrieved"
-  echo "4. UPLOAD tarball generated in Storage Azure Account specified in INPUT"
-  echo "5. LOG FILE script.log is generated."
+echo $4 > script.log
+if [ "$4" == "dry-run" ]; then
+  echo "1. GET INPUT:ARGUMENTS" >> script.log
+  echo "2. GET .conf files from remote machine to local" >> script.log 
+  echo "3. CREATE a tarball .tar.gz with .conf files retrieved" >> script.log
+  echo "4. UPLOAD tarball generated in Storage Azure Account specified in INPUT" >> script.log
+  echo "5. LOG FILE script.log is generated." >> script.log
 else
   HOST_INPUT=$1
   host=(${HOST_INPUT//:/ })
