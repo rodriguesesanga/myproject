@@ -9,7 +9,7 @@ trigger:
 pool: mypool
 
 steps:
-- script: .\myscript.sh %HOST_PATH% %LOCAL_PATH% %STORAGE_ACCOUNT% %LAUNCH_MODE%
+- script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
   displayName: 'Run a multi-line script'
 
 - script: type script.log
