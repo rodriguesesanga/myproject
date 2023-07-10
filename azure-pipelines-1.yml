@@ -9,7 +9,7 @@ trigger:
 pool: mypool
 
 steps:
-- script: .\myscript.sh azureuser@74.235.161.211:config_files src healthy:mycontainer dry-run
+- script: .\myscript.sh azureuser@74.235.161.211:config_files src healthy:mycontainer 'dry-run'
   displayName: 'Run a multi-line script'
 
 - script: type script.log
