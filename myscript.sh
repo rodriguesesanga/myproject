@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-if [ $4="dry-run" ]
-then
+if [ $4 = "dry-run" ]; then
   echo "1. GET INPUT:ARGUMENTS"
   echo "2. GET .conf files from remote machine to local"
   echo "3. CREATE a tarball .tar.gz with .conf files retrieved"
