@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-echo $4 > script.log
+
 if [ "$4" == "dry-run" ]; then
+  echo "**** This dry-run mode ****" > script.log
   echo "1. GET INPUT:ARGUMENTS" >> script.log
   echo "2. GET .conf files from remote machine to local" >> script.log 
   echo "3. CREATE a tarball .tar.gz with .conf files retrieved" >> script.log
