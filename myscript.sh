@@ -16,7 +16,7 @@ else
   local_dir=$2
   echo "LOCAL DIR : ${local_dir}" >> script.log
 
-  STORAGE=$3
+  STORAGE=${3:-healthy:mycontainer}
   storage=(${STORAGE//:/ })
   echo "STORAGE ACCOUNT : "${storage[0]}"" >> script.log
   echo "CONTAINER : ${storage[1]}" >> script.log
