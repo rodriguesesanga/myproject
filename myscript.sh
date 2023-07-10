@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ $4 = "dry-run" ]; then
+if [[ "$4" = "dry-run" ]; then
   echo "1. GET INPUT:ARGUMENTS"
   echo "2. GET .conf files from remote machine to local"
   echo "3. CREATE a tarball .tar.gz with .conf files retrieved"
@@ -9,7 +9,7 @@ if [ $4 = "dry-run" ]; then
 else
   HOST_INPUT=$1
   host=(${HOST_INPUT//:/ })
-  echo "HOST : ${host[0]}" > script.log
+  echo "HOST : ${host[0]}" >> script.log
   echo "PATH : ${host[1]}" >> script.log
 
   local_dir=$2
