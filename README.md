@@ -22,9 +22,12 @@ This project contain two scrips (Shell & powershell) that allows make some actio
     - LOCAL_PATH:  path as string
     - STORAGE_ACCOUNT: format <name:container> ( Default value set)
     - LAUNCH_MODE: <dry-run> for skipping script running.
+  
+          Note: If you are using different STORAGE ACCOUNT, you need update SAS KEY in AzCopy command. SAS Key starts with ? set after container name.
+
    
    ### 3. RUNNING SCRIPT
-    - .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
+     .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
     
 ## 2. Powershell
       This is a powershell script for adding user to a VM.
@@ -39,7 +42,7 @@ This project contain two scrips (Shell & powershell) that allows make some actio
    
    ### 3. RUNNING
    
-  .\powerscript.ps1 USERNAME PASSWORD VMwin RES_GROUP
+    .\powerscript.ps1 USERNAME PASSWORD VMwin RES_GROUP
 
 ## 3. PIPELINES
 
