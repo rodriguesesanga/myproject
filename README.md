@@ -40,3 +40,7 @@ This project contain two scrips (Shell & powershell) that allows make some actio
    ### 3. RUNNING
    
   .\powerscript.ps1 USERNAME PASSWORD VMwin RES_GROUP
+
+## 3. PIPELINES
+
+The file azure-pipelines.yml allows to launch the SHELL script in AZURE DEVOPS.
