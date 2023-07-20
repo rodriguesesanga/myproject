@@ -29,7 +29,7 @@ else
   name=$(date '+%Y-%m-%d_%H-%M-%S%z') >> script.log
   tar -zcvf configure_files/confiles-$name.tar.gz $local_dir/ >> script.log
 
-  ../../../../../../azcopy_windows_amd64_10.19.0/azcopy.exe copy "configure_files/confiles-$name.tar.gz" "https://healthy.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-08-31T20:01:04Z&st=2023-07-11T12:01:04Z&spr=https&sig=PT6dGExuUTUzRzIaZ7tY4tuDnswoGsYsh4c4chXBygk%3D" >> script.log
+  azcopy copy "configure_files/confiles-$name.tar.gz" "https://healthy.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-12-31T17:19:33Z&st=2023-07-20T08:19:33Z&spr=https&sig=Ku676Z99RoO3ZxYvQOXpXG3fFLSh9xk3q98uCmY%2FPj0%3D" >> script.log
 fi
 
 
