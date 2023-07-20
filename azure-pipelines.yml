@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: mypoolbis
+pool: mypoolter
 
 steps:
 - script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
