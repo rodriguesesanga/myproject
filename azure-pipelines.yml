@@ -10,7 +10,7 @@ pool: mypoolter
 
 steps:
 - script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
-  displayName: 'Run a multi-line script'
+  displayName: 'Run'
 
 - script: type script.log
   displayName: 'Printing logs'
