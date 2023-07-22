@@ -27,6 +27,9 @@ else
   #Create tarball in local machine
   name=$(date '+%Y-%m-%d_%H-%M-%S%z') >> script.log
   tar -zcvf configure_files/confiles-$name.tar.gz $local_dir/ >> script.log
+
+  cd ../../../ >> script.log
+  ls >> script.log
   
   ../../../Downloads/azcopy/azcopy_windows_amd64_10.19.0/azcopy.exe copy "configure_files/confiles-$name.tar.gz" "https://$storage[0].blob.core.windows.net/$storage[1]?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-12-31T17:19:33Z&st=2023-07-20T08:19:33Z&spr=https&sig=Ku676Z99RoO3ZxYvQOXpXG3fFLSh9xk3q98uCmY%2FPj0%3D" >> script.log
 fi
