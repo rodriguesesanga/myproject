@@ -12,5 +12,5 @@ steps:
 - script: sh myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
   displayName: 'Run'
 
-- script: type script.log
+- script: cat script.log
   displayName: 'Printing logs'
