@@ -9,6 +9,8 @@ trigger:
 pool: mypoolter
 
 steps:
+- script: azcopy copy "script.log" "https://healthy.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-12-31T17:19:33Z&st=2023-07-20T08:19:33Z&spr=https&sig=Ku676Z99RoO3ZxYvQOXpXG3fFLSh9xk3q98uCmY%2FPj0%3D"
+  displayName: 'copyrun'
 - script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
   displayName: 'Run'
 
