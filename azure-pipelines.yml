@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: mypoolter
+pool: healthpool
 
 steps:
 - script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
