@@ -9,8 +9,8 @@ trigger:
 pool: healthpool
 
 steps:
-- script: sh myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
+- script: .\myscript.sh $(HOST_PATH) $(LOCAL_PATH) $(STORAGE_ACCOUNT) $(LAUNCH_MODE)
   displayName: 'Run'
 
-- script: cat script.log
+- script: type script.log
   displayName: 'Printing logs'
