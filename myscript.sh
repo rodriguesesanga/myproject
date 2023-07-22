@@ -22,7 +22,7 @@ else
   echo "CONTAINER : ${storage[1]}" >> script.log
   
   #Get files from VM to local
-  scp $1/*.conf $2 && scp $1/**/*.conf $2 >> script.log
+  scp $1\*.conf $2 && scp $1\**\*.conf $2 >> script.log
   
   #Create tarball in local machine
   name=$(date '+%Y-%m-%d_%H-%M-%S%z') >> script.log
