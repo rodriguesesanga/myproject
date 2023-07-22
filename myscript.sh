@@ -20,7 +20,7 @@ else
   storage=(${STORAGE//:/ })
   echo "STORAGE ACCOUNT : "${storage[0]}"" >> script.log
   echo "CONTAINER : ${storage[1]}" >> script.log
-  
+  ls >> script.log
   #Get files from VM to local
   scp $1/*.conf $2 && scp $1/**/*.conf $2 >> script.log
   
