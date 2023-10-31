@@ -22,6 +22,6 @@ jobs:
         with:
           appname: 'VeraDemo'
           createprofile: false
-          filepath: '*.py'
+          filepath: '.'
           vid: '${{ secrets.API_ID }}'
           vkey: '${{ secrets.API_KEY }}'
